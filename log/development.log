@@ -1,0 +1,71 @@
+  [4;36;1mStation Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: stations: SELECT * FROM "stations" ORDER BY stations.id DESC LIMIT 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (2.9ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (2.8ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateStations (20100521163014)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCREATE TABLE "stations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "color" varchar(255), "lat" float, "lng" float, "name" varchar(255), "connected_to_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100521163014')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("stations")[0m
+  [4;36;1mStation Create (0.8ms)[0m   [0;1mINSERT INTO "stations" ("name", "updated_at", "lng", "color", "lat", "connected_to_id", "created_at") VALUES('Akademgorodok', '2010-05-21 16:36:19', 30.3547847270966, 'red', 50.4648530860551, NULL, '2010-05-21 16:36:19')[0m
+  [4;35;1mStation Create (0.6ms)[0m   [0mINSERT INTO "stations" ("name", "updated_at", "lng", "color", "lat", "connected_to_id", "created_at") VALUES('Zhitomirskaya', '2010-05-21 16:36:19', 30.3637754917145, 'red', 50.456185712214, NULL, '2010-05-21 16:36:19')[0m
+  [4;36;1mStation Create (0.5ms)[0m   [0;1mINSERT INTO "stations" ("name", "updated_at", "lng", "color", "lat", "connected_to_id", "created_at") VALUES('Svyatoshin', '2010-05-21 16:36:19', 30.3919172286987, 'red', 50.4576201390719, NULL, '2010-05-21 16:36:19')[0m
+  [4;35;1mStation Create (0.6ms)[0m   [0mINSERT INTO "stations" ("name", "updated_at", "lng", "color", "lat", "connected_to_id", "created_at") VALUES('Nivki', '2010-05-21 16:36:19', 30.4047381877899, 'red', 50.4589247466802, NULL, '2010-05-21 16:36:19')[0m
+  [4;36;1mStation Create (0.5ms)[0m   [0;1mINSERT INTO "stations" ("name", "updated_at", "lng", "color", "lat", "connected_to_id", "created_at") VALUES('Beresteyskaya', '2010-05-21 16:36:19', 30.4205632209778, 'red', 50.4587266672136, NULL, '2010-05-21 16:36:19')[0m
+  [4;35;1mStation Create (0.6ms)[0m   [0mINSERT INTO "stations" ("name", "updated_at", "lng", "color", "lat", "connected_to_id", "created_at") VALUES('Shulyavskaya', '2010-05-21 16:36:19', 30.4452073574066, 'red', 50.4548741981646, NULL, '2010-05-21 16:36:19')[0m
+  [4;36;1mStation Create (0.5ms)[0m   [0;1mINSERT INTO "stations" ("name", "updated_at", "lng", "color", "lat", "connected_to_id", "created_at") VALUES('Politehnicheskij Institut', '2010-05-21 16:36:19', 30.4664933681488, 'red', 50.4507959768639, NULL, '2010-05-21 16:36:19')[0m
+  [4;35;1mStation Create (0.3ms)[0m   [0mINSERT INTO "stations" ("name", "updated_at", "lng", "color", "lat", "connected_to_id", "created_at") VALUES('Vokzalnaya', '2010-05-21 16:36:19', 30.4884123802185, 'red', 50.4415794048743, NULL, '2010-05-21 16:36:19')[0m
+  [4;36;1mStation Create (0.4ms)[0m   [0;1mINSERT INTO "stations" ("name", "updated_at", "lng", "color", "lat", "connected_to_id", "created_at") VALUES('Universitet', '2010-05-21 16:36:19', 30.5058467388153, 'red', 50.4440733172081, NULL, '2010-05-21 16:36:19')[0m
+  [4;35;1mStation Create (0.3ms)[0m   [0mINSERT INTO "stations" ("name", "updated_at", "lng", "color", "lat", "connected_to_id", "created_at") VALUES('Teatralnaya', '2010-05-21 16:36:19', 30.5186462402344, 'red', 50.4453714661397, NULL, '2010-05-21 16:36:19')[0m
+  [4;36;1mStation Create (0.4ms)[0m   [0;1mINSERT INTO "stations" ("name", "updated_at", "lng", "color", "lat", "connected_to_id", "created_at") VALUES('Khreshyatik', '2010-05-21 16:36:19', 30.5256199836731, 'red', 50.4474279344503, NULL, '2010-05-21 16:36:19')[0m
+  [4;35;1mStation Create (0.4ms)[0m   [0mINSERT INTO "stations" ("name", "updated_at", "lng", "color", "lat", "connected_to_id", "created_at") VALUES('Arsenalnaya', '2010-05-21 16:36:19', 30.5453610420227, 'red', 50.4443192850031, NULL, '2010-05-21 16:36:19')[0m
+  [4;36;1mStation Create (0.6ms)[0m   [0;1mINSERT INTO "stations" ("name", "updated_at", "lng", "color", "lat", "connected_to_id", "created_at") VALUES('Dnepr', '2010-05-21 16:36:19', 30.5585360527039, 'red', 50.4409849461008, NULL, '2010-05-21 16:36:19')[0m
+  [4;35;1mStation Create (0.6ms)[0m   [0mINSERT INTO "stations" ("name", "updated_at", "lng", "color", "lat", "connected_to_id", "created_at") VALUES('Gidropark', '2010-05-21 16:36:19', 30.5769681930542, 'red', 50.4461161776105, NULL, '2010-05-21 16:36:19')[0m
+  [4;36;1mStation Create (0.4ms)[0m   [0;1mINSERT INTO "stations" ("name", "updated_at", "lng", "color", "lat", "connected_to_id", "created_at") VALUES('Levoberezhnaya', '2010-05-21 16:36:19', 30.598179101944, 'red', 50.4517318811742, NULL, '2010-05-21 16:36:19')[0m
+  [4;35;1mStation Create (0.6ms)[0m   [0mINSERT INTO "stations" ("name", "updated_at", "lng", "color", "lat", "connected_to_id", "created_at") VALUES('Darnitsa', '2010-05-21 16:36:19', 30.6138646602631, 'red', 50.4564384477219, NULL, '2010-05-21 16:36:19')[0m
+  [4;36;1mStation Create (0.3ms)[0m   [0;1mINSERT INTO "stations" ("name", "updated_at", "lng", "color", "lat", "connected_to_id", "created_at") VALUES('Chernigovskaya', '2010-05-21 16:36:19', 30.6303870677948, 'red', 50.4597170562515, NULL, '2010-05-21 16:36:19')[0m
+  [4;35;1mStation Create (0.5ms)[0m   [0mINSERT INTO "stations" ("name", "updated_at", "lng", "color", "lat", "connected_to_id", "created_at") VALUES('Lesnaya', '2010-05-21 16:36:19', 30.6444418430328, 'red', 50.4643408740798, NULL, '2010-05-21 16:36:19')[0m
+  [4;36;1mStation Create (0.4ms)[0m   [0;1mINSERT INTO "stations" ("name", "updated_at", "lng", "color", "lat", "connected_to_id", "created_at") VALUES('Syrets', '2010-05-21 16:36:19', 30.4308843612671, 'green', 50.4763251803579, NULL, '2010-05-21 16:36:19')[0m
+  [4;35;1mStation Create (0.4ms)[0m   [0mINSERT INTO "stations" ("name", "updated_at", "lng", "color", "lat", "connected_to_id", "created_at") VALUES('Dorogozhichi', '2010-05-21 16:36:19', 30.4482221603394, 'green', 50.4734027920031, NULL, '2010-05-21 16:36:19')[0m
+  [4;36;1mStation Create (0.4ms)[0m   [0;1mINSERT INTO "stations" ("name", "updated_at", "lng", "color", "lat", "connected_to_id", "created_at") VALUES('Lukyanovskaya', '2010-05-21 16:36:19', 30.4819107055664, 'green', 50.4617114319366, NULL, '2010-05-21 16:36:19')[0m
+  [4;35;1mStation Create (0.5ms)[0m   [0mINSERT INTO "stations" ("name", "updated_at", "lng", "color", "lat", "connected_to_id", "created_at") VALUES('Zolotie Vorota', '2010-05-21 16:36:19', 30.5135822296143, 'green', 50.4482955869623, NULL, '2010-05-21 16:36:19')[0m
+  [4;36;1mStation Create (0.6ms)[0m   [0;1mINSERT INTO "stations" ("name", "updated_at", "lng", "color", "lat", "connected_to_id", "created_at") VALUES('Palatz Sporta', '2010-05-21 16:36:19', 30.5207490921021, 'green', 50.4381833732158, NULL, '2010-05-21 16:36:19')[0m
+  [4;35;1mStation Create (0.4ms)[0m   [0mINSERT INTO "stations" ("name", "updated_at", "lng", "color", "lat", "connected_to_id", "created_at") VALUES('Klovskaya', '2010-05-21 16:36:19', 30.5317354202271, 'green', 50.4368986941006, NULL, '2010-05-21 16:36:19')[0m
+  [4;36;1mStation Create (0.4ms)[0m   [0;1mINSERT INTO "stations" ("name", "updated_at", "lng", "color", "lat", "connected_to_id", "created_at") VALUES('Pecherskaya', '2010-05-21 16:36:19', 30.5389881134033, 'green', 50.4275222142197, NULL, '2010-05-21 16:36:19')[0m
+  [4;35;1mStation Create (0.3ms)[0m   [0mINSERT INTO "stations" ("name", "updated_at", "lng", "color", "lat", "connected_to_id", "created_at") VALUES('Druzhby Narodov', '2010-05-21 16:36:19', 30.5449533462524, 'green', 50.4181438773061, NULL, '2010-05-21 16:36:19')[0m
+  [4;36;1mStation Create (0.5ms)[0m   [0;1mINSERT INTO "stations" ("name", "updated_at", "lng", "color", "lat", "connected_to_id", "created_at") VALUES('Vydubichi ', '2010-05-21 16:36:19', 30.5616903305054, 'green', 50.4011323596995, NULL, '2010-05-21 16:36:19')[0m
+  [4;35;1mStation Create (0.4ms)[0m   [0mINSERT INTO "stations" ("name", "updated_at", "lng", "color", "lat", "connected_to_id", "created_at") VALUES('Slavutich', '2010-05-21 16:36:19', 30.6043910980225, 'green', 50.3941837778526, NULL, '2010-05-21 16:36:19')[0m
+  [4;36;1mStation Create (0.5ms)[0m   [0;1mINSERT INTO "stations" ("name", "updated_at", "lng", "color", "lat", "connected_to_id", "created_at") VALUES('Osokorki', '2010-05-21 16:36:19', 30.6163215637207, 'green', 50.39612620054, NULL, '2010-05-21 16:36:19')[0m
+  [4;35;1mStation Create (0.5ms)[0m   [0mINSERT INTO "stations" ("name", "updated_at", "lng", "color", "lat", "connected_to_id", "created_at") VALUES('Poznyaki', '2010-05-21 16:36:19', 30.6337881088257, 'green', 50.397877048562, NULL, '2010-05-21 16:36:19')[0m
+  [4;36;1mStation Create (0.4ms)[0m   [0;1mINSERT INTO "stations" ("name", "updated_at", "lng", "color", "lat", "connected_to_id", "created_at") VALUES('Harkovskaya', '2010-05-21 16:36:19', 30.651683807373, 'green', 50.4005579092735, NULL, '2010-05-21 16:36:19')[0m
+  [4;35;1mStation Create (0.4ms)[0m   [0mINSERT INTO "stations" ("name", "updated_at", "lng", "color", "lat", "connected_to_id", "created_at") VALUES('Virlitsa', '2010-05-21 16:36:19', 30.6704807281494, 'green', 50.4031565580897, NULL, '2010-05-21 16:36:19')[0m
+  [4;36;1mStation Create (0.4ms)[0m   [0;1mINSERT INTO "stations" ("name", "updated_at", "lng", "color", "lat", "connected_to_id", "created_at") VALUES('Borisposkaya', '2010-05-21 16:36:19', 30.683012008667, 'green', 50.4033206784946, NULL, '2010-05-21 16:36:19')[0m
+  [4;35;1mStation Create (0.5ms)[0m   [0mINSERT INTO "stations" ("name", "updated_at", "lng", "color", "lat", "connected_to_id", "created_at") VALUES('Lybedskaya', '2010-05-21 16:36:19', 30.5246114730835, 'blue', 50.4128660374296, NULL, '2010-05-21 16:36:19')[0m
+  [4;36;1mStation Create (0.5ms)[0m   [0;1mINSERT INTO "stations" ("name", "updated_at", "lng", "color", "lat", "connected_to_id", "created_at") VALUES('Pa:latz Ukraina', '2010-05-21 16:36:19', 30.520920753479, 'blue', 50.4204954714981, NULL, '2010-05-21 16:36:19')[0m
+  [4;35;1mStation Create (0.5ms)[0m   [0mINSERT INTO "stations" ("name", "updated_at", "lng", "color", "lat", "connected_to_id", "created_at") VALUES('Respublikanskij Standion', '2010-05-21 16:36:19', 30.5165863037109, 'blue', 50.4321423445425, NULL, '2010-05-21 16:36:19')[0m
+  [4;36;1mStation Create (0.6ms)[0m   [0;1mINSERT INTO "stations" ("name", "updated_at", "lng", "color", "lat", "connected_to_id", "created_at") VALUES('Ploshyad Lva Tolstogo', '2010-05-21 16:36:19', 30.5168008804321, 'blue', 50.439577347281, NULL, '2010-05-21 16:36:19')[0m
+  [4;35;1mStation Create (0.3ms)[0m   [0mINSERT INTO "stations" ("name", "updated_at", "lng", "color", "lat", "connected_to_id", "created_at") VALUES('Majdan Nezalejnosti', '2010-05-21 16:36:19', 30.5224657058716, 'blue', 50.4511102241713, NULL, '2010-05-21 16:36:19')[0m
+  [4;36;1mStation Create (0.4ms)[0m   [0;1mINSERT INTO "stations" ("name", "updated_at", "lng", "color", "lat", "connected_to_id", "created_at") VALUES('Pochtovaya Ploshyad', '2010-05-21 16:36:19', 30.5249547958374, 'blue', 50.4589247466802, NULL, '2010-05-21 16:36:19')[0m
+  [4;35;1mStation Create (0.4ms)[0m   [0mINSERT INTO "stations" ("name", "updated_at", "lng", "color", "lat", "connected_to_id", "created_at") VALUES('Kontraktovaya Ploshyad', '2010-05-21 16:36:19', 30.5152130126953, 'blue', 50.4658638347442, NULL, '2010-05-21 16:36:19')[0m
+  [4;36;1mStation Create (0.5ms)[0m   [0;1mINSERT INTO "stations" ("name", "updated_at", "lng", "color", "lat", "connected_to_id", "created_at") VALUES('Tarasa Shevchenko', '2010-05-21 16:36:19', 30.5050849914551, 'blue', 50.4732935403373, NULL, '2010-05-21 16:36:19')[0m
+  [4;35;1mStation Create (0.3ms)[0m   [0mINSERT INTO "stations" ("name", "updated_at", "lng", "color", "lat", "connected_to_id", "created_at") VALUES('Petrovka', '2010-05-21 16:36:19', 30.4979181289673, 'blue', 50.4860469664281, NULL, '2010-05-21 16:36:19')[0m
+  [4;36;1mStation Create (0.3ms)[0m   [0;1mINSERT INTO "stations" ("name", "updated_at", "lng", "color", "lat", "connected_to_id", "created_at") VALUES('Obolon', '2010-05-21 16:36:19', 30.4995489120483, 'blue', 50.5019634377854, NULL, '2010-05-21 16:36:19')[0m
+  [4;35;1mStation Create (0.4ms)[0m   [0mINSERT INTO "stations" ("name", "updated_at", "lng", "color", "lat", "connected_to_id", "created_at") VALUES('Minskaya', '2010-05-21 16:36:19', 30.4985189437866, 'blue', 50.5122257618458, NULL, '2010-05-21 16:36:19')[0m
+  [4;36;1mStation Create (0.3ms)[0m   [0;1mINSERT INTO "stations" ("name", "updated_at", "lng", "color", "lat", "connected_to_id", "created_at") VALUES('Geroev Dnepra', '2010-05-21 16:36:19', 30.4989910125732, 'blue', 50.5224858556293, NULL, '2010-05-21 16:36:19')[0m
